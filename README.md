@@ -1,22 +1,28 @@
-# wine-search-engine
-## Description
-This project is intended to allow for an easy way to scrape wine data from [wine.com](https://www.wine.com/list/wine/7155) based on the criteria selected by the user. A simple GUI has been created so that even a non technical user can use the tool. The data is exported to a CSV file in the active directory.\
-This project be a useful tool for someone looking to analyze wine data or the casual wine connoisseur!
+# Wine Web Scraper Application
+
+## Overview
+The Wine Scraper Application is a Python-based tool that scrapes wine data from the Wine.com website based on user-specified criteria. The application uses a GUI (Graphical User Interface) built with Tkinter for easy interaction. The data is processed using the BeautifulSoup library and saved as a CSV file for further analysis.
+
+## Features
+- Scrape wine data including name, type, origin, ratings, reviews, price, and discounts.
+- Filter wines based on minimum ratings and maximum price.
+- Generate a CSV report with the scraped data.
+- Simple and interactive GUI.
+
+## Setup and Installation
+
+### Prerequisites
+Ensure you have Python installed. You will also need the following Python libraries:
+- `urllib` (standard library, no need to install)
+- `BeautifulSoup` (from the `bs4` package)
+- `pandas`
+- `tkinter` (standard library, no need to install)
+
+### Install Dependencies
+Install the required packages using `pip`:
+```bash
+pip install beautifulsoup4 pandas
+```
 
 ## GUI Visual
 ![GUI visual](/images/GUI_example.JPG)
-
-## Installation
-### Requirements
-* Python 3
-* Libraries:
-    * urllib.request
-    * bs4
-    * pandas
-    * tkinter
-If you do not have any of these libraries, you can install them using ```pip install <library or module name>```.
-## Usage
-If you run the ```Wine_Data.py``` file, it will produce an interface to select the criteria you want (price and rating). Once selected, press "Create Wine List" and a CSV file will be created in the same directory titled witha  description of the criteria and date. The CSV file will contain the following values for each wine identified: name, wine_type, origin, rating, reviews, sale_price, savings, savings_percent.
-
-## Project Status
-I do not plan on contributing or adding to this project.
